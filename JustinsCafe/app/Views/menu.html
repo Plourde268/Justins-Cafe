@@ -1,0 +1,20 @@
+﻿<p>{{vm.message}}</p>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Breakfast Item</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="item in vm.menuItems">
+            <td>{{item.name}}</td>
+            <td>{{item.price}}</td>
+            <td>{{item.description}}</td>
+            <td>{{item.isBreakfast}}</td>
+        </tr>
+    </tbody>
+</table>

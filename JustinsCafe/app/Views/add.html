@@ -1,0 +1,12 @@
+﻿<p>{{vm.message}}</p>
+
+<form ng-disabled="vm.isLoading" novalidate ng-submit="vm.addItem()">
+
+    <input ng-model="vm.name" placeholder="Name: "/>
+    <input ng-model="vm.price" placeholder="Price: " />
+    <input ng-model="vm.description" placeholder="Description: " />
+    <label>Breakfast Item?</label>
+    <input ng-model="vm.isBreakfast" type="checkbox" />
+    
+    <input type="submit" value="submit" />
+</form>
